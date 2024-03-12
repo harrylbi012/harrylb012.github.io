@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Roboto&display=swap');
+
+
+.background {
+    background-image: url('img/spacecowboy.jpg');
+    background-size: cover; /* Set the background size to cover the entire container */
+    background-repeat: no-repeat; /* Prevent the background image from being repeated */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    text-align: center; /* Center the text horizontally */
+    color: #fff; /* Set text color to white (or any other color that suits your design) */
+    padding: 0; /* Set padding to 0 */
+    margin: 0; /* Set margin to 0 to remove default body margin */
+}
+
+.topnav {
+    background-color: #D9422F;
+    overflow: hidden;
+    float: right;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+
+  }
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    font-family: 'Rajdhani', sans-serif;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    float: right;
+  }
+.topnav img{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  float: left;
+  
+  
+}
+
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: grey;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: grey;
+    color: white;
+  }
+
+/*halaman 2 */
+
+.container {
+  max-width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: 
+  "header header "
+  "aside aside "
+  "footer footer ";
+  font-family: 'Rajdhani', sans-serif;
+  grid-template-columns: 1.1fr 2fr;
+  grid-template-rows: 1fr 1fr 1,3fr;
+  
+}
+
+header{
+  grid-area: header;
+  background-color: black;
+  padding: 20px 0;
+}
+header h1{
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+aside{
+  display: flex;
+  grid-area: aside;
+  background-color: black;
+  
+}
+
+
+container-content {
+  width: 100%;
+}
+
+aside p{
+  color: white;
+  flex: 1;
+  margin-top: 16%;
+  margin-bottom: 14%;
+  text-align: center;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+main{
+  background-color: black;
+  flex: 1;
+}
+
+footer{
+  grid-area: footer;
+  background-color: #D9422F;
+  padding: 40px 0;
+}
+
+main img{
+  object-fit: cover;
+  object-fit: fill;
+  width: 100%;
+  
+
+}
+
